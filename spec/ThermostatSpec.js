@@ -81,4 +81,25 @@ describe('Thermostat', function() {
       expect(thermostat.getCurrentTemperature()).toEqual(20);
     });
   });
+
+  describe('display useage levels', function() {
+    it('states low-useage if temp below 18 degrees', function() {
+      for (var i = 0; i < 3; i++) {
+        thermostat.down();
+      }
+      expect(thermostat.energyUsage()).toEqual("low-usage");
+    });
+    
+    it('states meduim-useage if temp between 18 and 25 degrees', function() {
+      expect(thermostat.energyUsage()).toEqual("medium-usage");
+    });
+
+    it('states high-usage if temp above 25 degrees', function() {
+      thermostat.powerSaver = false;
+      for (var i = 0; i < 6; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual("high-usage");
+    });
+  });
 });
