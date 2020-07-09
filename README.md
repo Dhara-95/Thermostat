@@ -11,8 +11,8 @@
 - If power saving mode is off, the maximum temperature is 32 degrees
 - Power saving mode is on by default but it can also be turned off
 - You can reset the temperature to 20 with a reset function
-- You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
-(In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+- You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage. ( low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+- Additional functionality added to get an AJAX request from a 'current-weather' API, that prints the current weather of a city that a user has submitted in a form. 
 
 ```
 
@@ -38,3 +38,5 @@ open SpecRunner.html
 @Dhara-95
 
 @mattybwoy
+
+@avirene
