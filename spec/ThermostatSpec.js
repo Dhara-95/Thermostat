@@ -61,4 +61,14 @@ describe('Thermostat', function() {
       expect(thermostat.getCurrentTemperature()).toEqual(25);
     });
   });
+
+  describe('when power saving mode is off', function () {
+    it('has a maxiumum temperature of 32 degrees', function () {
+      thermostat.switchPowerSaverOff();
+      for (var i = 0; i < 13; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.getCurrentTemperature()).toEqual(32);
+    });
+  });
 });
