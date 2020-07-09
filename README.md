@@ -19,10 +19,10 @@
 **Installation**
 ----
 
-To get up and running follow below steps
+To get up and running follow below steps in the terminal:
 
 ```
-$ git clone https://github.com/Dhara-95/Thermostat
+git clone https://github.com/Dhara-95/Thermostat
 ```
 
 **To run Thermostat in browser**
