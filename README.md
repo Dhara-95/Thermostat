@@ -25,7 +25,14 @@ To get up and running follow below steps
 $ git clone https://github.com/Dhara-95/Thermostat
 ```
 
-**To view in browser**
+**To run Thermostat in browser**
+----
+
+```
+open index.html
+```
+
+**To run Jasmine tests**
 ----
 
 ```
