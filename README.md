@@ -1,4 +1,4 @@
-# Thermostat
+# Thermostat Challenge
 
 **Specification**
 
@@ -16,27 +16,35 @@
 
 ```
 
-## Progress so far
+**Progress so far**
+----
+
 - Have implemented fucntions for increasing and decreasing temperature along with working tests.
 - Minimum temperature set to 10 and test confirmed operational.
 - Power saving functionality is now defaulted to on, test for maximum temperature in power saver mode is confirmed operational with error message displayed.
 - Normal mode functionality confirmed to be working, test for maximum temperature not currently operational as error message not displayed.
 
-## Installation
+**Installation**
+----
 
 To get up and running follow below steps
 
-- clone repository
+```
+
+$ git clone https://github.com/Dhara-95/Thermostat
+```
 
 **To view in browser**
-
-```bash
-
-open SpecRunner.html
+----
 
 ```
 
-### Collaborators
+open SpecRunner.html
+```
+
+**Collaborators**
+----
+
 @Dhara-95
 
 @mattybwoy
