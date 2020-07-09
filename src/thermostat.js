@@ -4,6 +4,8 @@ class Thermostat {
 
   constructor() {
     this.MINIMUM_TEMPERATURE = 10;
+    this.MAX_TEMP_PWS_ON = 25;
+    this.MAX_TEMP_PWS_OFF = 32;
     this.temperature = 20;
     this.powerSaver = true;
   };
@@ -13,6 +15,9 @@ class Thermostat {
   };
 
   up() {
+    if (this.isMaximumTemperature()) {
+      return;
+    }
     this.temperature++;
     return this.temperature;
   };
@@ -27,6 +32,15 @@ class Thermostat {
 
   isMinimumTemperature() {
     return this.temperature === this.MINIMUM_TEMPERATURE;
+  };
+
+  isMaximumTemperature() {
+    if (this.isPowerSaverOn() === false) {
+      return this.temperature === this.MAX_TEMP_PWS_OFF;
+    }
+    else {
+      return this.temperature === this.MAX_TEMP_PWS_ON;
+    }
   };
 
   isPowerSaverOn() {

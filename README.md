@@ -22,7 +22,6 @@
 To get up and running follow below steps
 
 ```
-
 $ git clone https://github.com/Dhara-95/Thermostat
 ```
 
@@ -30,7 +29,6 @@ $ git clone https://github.com/Dhara-95/Thermostat
 ----
 
 ```
-
 open SpecRunner.html
 ```
 
