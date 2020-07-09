@@ -33,4 +33,23 @@ describe('Thermostat', function() {
       expect(thermostat.getCurrentTemperature()).toEqual(10);
     });
   });
+
+  describe('power saving mode', function() {
+    it('turns power saving mode on by default', function() {
+      expect(thermostat.isPowerSaverOn()).toBe(true);
+    });
+
+    it('can switch power saving mode off', function() {
+      thermostat.switchPowerSaverOff();
+      expect(thermostat.isPowerSaverOn()).toBe(false);
+    });
+
+    it('can switch power saving mode back on', function() {
+      thermostat.switchPowerSaverOff();
+      expect(thermostat.isPowerSaverOn()).toBe(false);
+      thermostat.switchPowerSaverOn();
+      expect(thermostat.isPowerSaverOn()).toBe(true);
+      expect(thermostat)
+    });
+  });
 });

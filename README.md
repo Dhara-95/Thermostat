@@ -16,14 +16,6 @@
 
 ```
 
-**Progress so far**
-----
-
-- Have implemented fucntions for increasing and decreasing temperature along with working tests.
-- Minimum temperature set to 10 and test confirmed operational.
-- Power saving functionality is now defaulted to on, test for maximum temperature in power saver mode is confirmed operational with error message displayed.
-- Normal mode functionality confirmed to be working, test for maximum temperature not currently operational as error message not displayed.
-
 **Installation**
 ----
 
